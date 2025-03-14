@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutriguide - Weekly Food Chart</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+    .container { max-width: 1200px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    h2 { color: #5D3FD3; text-align: center; margin-bottom: 20px; }
+    .button-group { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+    .button-group button { border: none; cursor: pointer; font-size: 16px; padding: 10px 20px; border-radius: 10px; transition: 0.3s; }
+    .button-group button:hover { opacity: 0.8; }
+    .table-container { display: none; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+    th { background-color: #5D3FD3; color: white; }
+    @media screen and (max-width: 768px) { table { display: block; overflow-x: auto; white-space: nowrap; } }
+  </style>
+  <script>
+    function showTable(ageGroup) {
+      var tables = document.querySelectorAll('.table-container');
+      tables.forEach(function (table) { table.style.display = 'none'; });
+      document.getElementById(ageGroup).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Food Chart</h2>
+    <div class="button-group">
+      <button style="background-color: #FFDAB9;" onclick="showTable('age1-3')"> Toddlers 🧸</button>
+    </div>
+
+    <!-- Age 1-3 -->
+    <div id="age1-3" class="table-container">
+     
+      <table>
+        <tr>
+            <th>Day</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Evening Snacks</th>
+            <th>Dinner</th>
+        </tr>
+        <tr>
+            <td>Monday</td><td>Ragi porridge + Banana</td>
+            <td>Dal rice with ghee</td>
+            <td>Banana pancakes</td>
+            <td>Soft Idli + Chutney</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Boiled egg + Milk</td>
+            <td>Vegetable khichdi</td>
+            <td>Fruit salad</td>
+            <td>Vegetable upma</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Oats with apple</td>
+            <td>Rice with dal & ghee</td>
+            <td>Homemade crackers</td>
+            <td>Curd rice</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Idli with coconut chutney</td>
+            <td>Rice, dal, mixed veggies</td>
+            <td>Boiled potatoes</td>
+            <td>Soft chapati with dal</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Pancakes with honey</td>
+            <td>Rice, sambar & ghee</td>
+            <td>Fruit smoothie</td>
+            <td>Vegetable poha</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Wheat porridge</td>
+            <td>Dal rice with veggies</td>
+            <td>Cheese cubes</td>
+            <td>Roti with mashed dal</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>Milk & Banana</td><td>Vegetable pulao</td><td>Nut bar</td><td>Chapati with mixed vegetables</td></tr>
+      </table>
+    </div>
+
+    
+    <div class="d-flex flex-row justify-content-end">
+        <a href="SL.html" class="btn btn-dark">Back</a>
+    </div>
+
+  </div>
+</body>
+</html>

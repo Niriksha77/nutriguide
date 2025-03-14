@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: #767272;
+    text-align: center;
+}
+
+.btn-primary{
+    font-size: 12px;
+}
+
+.head{
+    color:#003366;
+    text-align: center;
+    text-shadow: rgb(116, 142, 120);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.sectionTitle
+{
+    color:#003366;
+    text-decoration: underline;
+}
+
+.hero{
+    background:url('https://img.freepik.com/free-photo/top-view-arrangement-with-meal-planning-notebook_23-2149099897.jpg?t=st=1740650448~exp=1740654048~hmac=47d684c9af60ba0b5407f14fb63807fdfe71c21c655b5d127090cd91f0482401&w=996') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.features {
+    padding: 50px 0;
+}
+
+.features h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.text-nutri{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.myImg{
+    height: 100px;
+    width: 100%;
+    margin:10px;
+    padding: 10px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}

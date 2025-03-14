@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracker</title>
+    <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+    <h2>Food Tracker</h2>
+    
+    <label for="childId">Enter Child ID:</label>
+    <input type="text" id="childId" placeholder="CH1, CH2, etc.">
+    <button onclick="loadData()">Load</button>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+                <th>Snack</th>
+                <th>Dinner</th>
+            </tr>
+        </thead>
+        <tbody id="trackerTable"></tbody>
+    </table>
+
+    <button onclick="saveData()">Save Progress</button>
+    <button onclick="calculateProgress()">Show Weekly Progress</button>
+
+    <h3 id="progressOutput"></h3>
+
+    <script src="tracker.js"></script>
+</body>
+</html>

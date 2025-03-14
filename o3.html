@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutriguide - Weekly Food Chart</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #5D3FD3;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .button-group button {
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .button-group button:hover {
+      opacity: 0.8;
+    }
+    .table-container {
+      display: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #5D3FD3;
+      color: white;
+    }
+    @media screen and (max-width: 768px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+
+  <script>
+    function showTable(ageGroup) {
+      var tables = document.querySelectorAll('.table-container');
+      tables.forEach(function (table) {
+        table.style.display = 'none';
+      });
+      document.getElementById(ageGroup).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Food Chart</h2>
+
+    <div class="button-group">
+        <button style="background-color: #FFB6C1; color: #00008B; border-radius: 10px; padding: 10px 20px;" onclick="showTable('age7-9')">
+            Kids 🚴
+        </button>
+
+    </div>
+  
+      <!-- Food Chart for Age 7–9 Years -->
+      <div id="age7-9" class="table-container">
+    
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Evening Snacks</th>
+            <th>Dinner</th>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>Idli with coconut chutney</td>
+            <td>Rice with dal &amp; mixed vegetable curry</td>
+            <td>Fruit salad</td>
+            <td>Chapati with vegetable curry</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Oats with banana</td>
+            <td>Egg Rice</td>
+            <td>Veggie sticks with hummus</td>
+            <td>Roti with lentil curry</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Wheat toast with boiled egg</td>
+            <td>Pasta with tomato &amp; veggies</td>
+            <td>Yogurt with fruits</td>
+            <td>Idli with sambar</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Poha with peas</td>
+            <td>Rice with mixed vegetable curry</td>
+            <td>Apple slices with peanut butter</td>
+            <td>Chapati with dal</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Multigrain cereal with milk</td>
+            <td>Vegetable biryani</td>
+            <td>Roasted chickpeas</td>
+            <td>Vegetable soup with bread</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Dosa with chutney</td>
+            <td>Curd rice with cucumber</td>
+            <td>Fruit chaat</td>
+            <td>Vegetable upma</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>Cornflakes with milk</td>
+            <td>Lemon rice with salad</td>
+            <td>Homemade energy bars</td>
+            <td>Vegetable stew with roti</td>
+          </tr>
+        </table>
+      </div>
+  
+      <!-- Food Chart for Age 10–12 Years -->
+   
+      <div class="d-flex flex-row justify-content-end">
+        <a href="SL.html" class="btn btn-dark">Back</a>
+    </div>
+      
+  </div>
+</body>
+</html>

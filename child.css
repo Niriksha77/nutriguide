@@ -1,0 +1,34 @@
+body {
+    background-color: #f8f9fa; /* Light background */
+}
+
+.container {
+    max-width: 500px;
+}
+
+.child-profile {
+    background: linear-gradient(to right, #E3F2FD, #FCE4EC); /* Mild pastel gradient */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

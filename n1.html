@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Chart</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+      
+    <!--css style-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #5D3FD3;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .button-group button {
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .table-container {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #5D3FD3;
+            color: white;
+        }
+    </style>
+
+    <!--script-->
+    <script>
+        function showTable(ageGroup) {
+            var tables = document.querySelectorAll('.table-container');
+            tables.forEach(function(table) {
+                table.style.display = 'none';
+            });
+            document.getElementById(ageGroup).style.display = 'block';
+        }
+    </script>
+
+    
+</head>
+<body>
+
+<div class="container">
+    <h2>Food Chart</h2>
+
+     <!--button style-->
+
+    <div class="button-group">
+        <button style="background-color: #FFDAB9; color: #800080; border-radius: 12px; padding: 10px 20px;" )">
+            Toddlers 🧸
+        </button>
+    </div>
+
+    <div id="age1-3" class="table-container">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+                <th>Evening Snacks</th>
+                <th>Dinner</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Ragi porridge + Mashed banana</td>
+                <td>Mashed dal rice with ghee, Vegetable Khichdi</td>
+                <td>Banana pancakes, Homemade wheat cookies</td>
+                <td>Soft Idli + Groundnut Chutney</td>
+                
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Mashed Boiled egg + Milk + Wheat Toast</td>
+                <td>Rice with dal</td>
+                <td>Fruit salad</td>
+                <td>Vegetable upma</td>
+                
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Vegetable suji + Apple</td>
+                <td>Soft chapati with mashed Paneer</td>
+                <td>Banana slices with nut butter</td>
+                <td>Rice with Vegetable curry</td>
+                
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Soft Idli and Mint chutney</td>
+                <td>Vegetable pulao</td>
+                <td>Nuts ladoo with milk</td>
+                <td>Moong dal Khichdi + Tomato Soup</td>
+                
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Ragi Pancakes + Fruit slices</td>
+                <td>Steamed beetroot or Carrot rice</td>
+                <td>Apple juice, orange juice</td>
+                <td>Vegetable Soup</td>
+                
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Apple, Oatmeal</td>
+                <td>Peanut Butter rolls, Carrot rice</td>
+                <td>Grapes, Almonds</td>
+                <td>Chapati with Paneer</td>
+                
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Soft Idli with coconut chutney</td>
+                <td>Vegetable Biriyani</td>
+                <td>A cup of Buttermilk</td>
+                <td>Tomato Soup</td>
+                
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="d-flex justify-content-end">
+        <a href="SL.html" class="btn btn-dark">Back</a>
+    </div>
+
+</div>

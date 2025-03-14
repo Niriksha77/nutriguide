@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Chart</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+      
+    <!--css style-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #5D3FD3;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .button-group button {
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .table-container {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #5D3FD3;
+            color: white;
+        }
+    </style>
+
+    <!--script-->
+    <script>
+        function showTable(ageGroup) {
+            var tables = document.querySelectorAll('.table-container');
+            tables.forEach(function(table) {
+                table.style.display = 'none';
+            });
+            document.getElementById(ageGroup).style.display = 'block';
+        }
+    </script>
+
+    
+</head>
+<body>
+
+<div class="container">
+    <h2>Food Chart</h2>
+
+     <!--button style-->
+
+    <div class="button-group">
+        <button style="background-color: #FFD700; color: #673AB7; border-radius: 8px; padding: 10px 20px;" onclick="showTable('age13-15')">
+            Teens 🎧
+        </button>
+
+    </div>
+    
+        <div id="age13-15" class="table-container">
+          
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Breakfast</th>
+                    <th>Lunch</th>
+                    <th>Evening Snacks</th>
+                    <th>Dinner</th>
+                    
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Dal, rice and banana slices</td>
+                    <td>Rice, dal, vegetable curry</td>
+                    <td>Fruit salad + handful of nuts</td>
+                    <td>Chapati with paneer + cucumber raita</td>
+                   
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Wheat Pancakes with honey + milk</td>
+                    <td>Roti + peas curry</td>
+                    <td>Mixed fruit juice</td>
+                    <td>Vegetable khichdi</td>
+                    
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Vegetable upma + Any fruit</td>
+                    <td>Egg Rice</td>
+                    <td>Homemade popcorn</td>
+                    <td>Dal rice + beetroot fry</td>
+                    
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Ragi Dosa + Coconut chutney</td>
+                    <td>Cumin rice + Cucumber salad</td>
+                    <td>Roasted nuts + buttermilk</td>
+                    <td>Roti with potato spinach fry</td>
+                    
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Wheat bread + mixed fruit jam</td>
+                    <td>Lemon rice with cabbage fry</td>
+                    <td>Vegetable soup</td>
+                    <td>Paratha with curd</td>
+                   
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Idli with coconut chutney</td>
+                    <td>Dal rice + Pumpkin curry</td>
+                    <td>Peanut butter sandwich + juice</td>
+                    <td>Vegetable pulao + curd</td>
+                   
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Millet dosa with chutney</td>
+                    <td>Roti with beans + beetroot salad</td>
+                    <td>Banana milkshake</td>
+                    <td>Vegetable soup + mixed dal paratha</td>
+                    
+                </tr>
+            </table>
+        </div>
+    
+    </div>
+
+
+    <div class="d-flex justify-content-end">
+        <a href="SL.html" class="btn btn-dark">Back</a>
+    </div>
+
+</div>
